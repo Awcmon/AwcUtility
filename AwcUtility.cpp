@@ -152,3 +152,14 @@ float Random(float min, float max)
 {
 	return min + ((float)rand()) / ( (RAND_MAX / (max - min)));
 }
+
+std::vector<std::string> explode(std::string const & s, char delim)
+{
+    std::vector<std::string> result;
+    std::istringstream iss(s);
+    for (std::string token; getline(iss, token, delim); )
+    {
+        result.push_back(move(token));
+    }
+    return result;
+}

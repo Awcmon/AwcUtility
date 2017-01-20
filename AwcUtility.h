@@ -25,4 +25,6 @@ float RandF();
 int RandIntNoRep(int s, int e);
 float Random(float min, float max);
 
+std::vector<std::string> explode(std::string const & s, char delim)
+
 #endif // AWCUTILITY_H_INCLUDED
